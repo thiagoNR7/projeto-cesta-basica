@@ -129,11 +129,7 @@ color: #699923;
   font-family: Arial, Helvetica, sans-serif;
   padding: 7px 20px;
   border-radius: 50px;
-  background-image: url(../View/Img/botao_home.png);
-  background-repeat: no-repeat;
-  background-size: 20px; /* Ajuste o tamanho da imagem */
-  background-position: left center; /* Alinhe a imagem à esquerda do texto */
-  color: black; /* Cor do texto em preto */
+  
   text-decoration: underline; /* Adicione sublinhado ao texto */
   font-weight: bold; /* Texto em negrito */
   transition: background-color 0.3s ease;
