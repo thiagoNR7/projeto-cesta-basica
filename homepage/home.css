@@ -1,6 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 
 
@@ -10,6 +12,10 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
+  background-image: url(/imgs/cesta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
   grid-template-areas:
     "header header"
     "aside aside"
@@ -23,30 +29,27 @@ body {
 /* Estilos para o header */
 header {
   grid-area: header;
-  padding: 0;
-  background-image: linear-gradient(135deg, #d8f139 0, #beeb3f 12.5%, #a3e245 25%, #87d84b 37.5%, #6acc50 50%, #4bbf54 62.5%, #26b459 75%, #00aa5d 87.5%, #00a162 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100px;
+    padding: 0;
+    background: transparent;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 /* Estilos para o aside */
 aside {
   grid-area: aside;
-  background-image: url(/imgs/cesta.png);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: auto;
   display: flex;
-  flex-direction: column; /* Para alinhar os botões verticalmente */
-  justify-content: flex-end; /* Alinhar os botões na parte inferior */
-  align-items: flex-start; /* Alinhar os botões à esquerda */
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 /* Estilos para o footer */
 footer {
   grid-area: footer;
-  background-image: linear-gradient(135deg, #d8f139 0, #beeb3f 12.5%, #a3e245 25%, #87d84b 37.5%, #6acc50 50%, #4bbf54 62.5%, #26b459 75%, #00aa5d 87.5%, #00a162 100%);
+background: transparent;
   color: black;
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
@@ -68,16 +71,17 @@ color: #699923;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  text-align: left;
-  width: fit-content;
+  text-align: center;
+  width: 500px;
   margin-top: auto; /* Empurra o botão para a parte inferior */
   margin-left: 20px; /* Espaçamento entre o botão "DOE ALIMENTOS" e os botões superiores */
 }
 .botao-home:hover {
-  background-color: #699923;
+  background-color: #6acc50;
   transform: translateY(1s);
   transition: 1s;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid goldenrod;
 }
 .botao-home {
   font-family: Arial, Helvetica, sans-serif;
@@ -98,11 +102,12 @@ color: #699923;
   width: fit-content;
   margin-right: 10px; /* Espaçamento entre os botões superiores */
 }
-.botap-voluntario:hover {
-  background-color: #699923;
+.botao-voluntario:hover {
+  background-color: #6acc50;
   transform: translateY(1s);
   transition: 1s;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid goldenrod;
 }
 .botao-voluntario {
   font-family: Arial, Helvetica, sans-serif;
@@ -119,17 +124,18 @@ color: #699923;
   margin-right: 10px; /* Espaçamento entre os botões superiores */
   text-decoration: none;
 }
-.botao-localizacao:hover {
-  background-color: #699923;
-  transform: translateY(1s);
-  transition: 1s;
-  text-decoration: underline;
-}
+  .botao-localizacao:hover {
+    background-color: #6acc50;
+    transform: translateY(1s);
+    transition: 1s;
+    text-decoration: none;
+    border-bottom: 2px solid goldenrod;
+  }
 .botao-localizacao {
   font-family: Arial, Helvetica, sans-serif;
   padding: 7px 20px;
   border-radius: 50px;
-  
+  color: black;
   text-decoration: underline; /* Adicione sublinhado ao texto */
   font-weight: bold; /* Texto em negrito */
   transition: background-color 0.3s ease;
@@ -140,9 +146,51 @@ color: #699923;
   margin-right: 10px; /* Espaçamento entre os botões superiores */
   text-decoration: none;
 }
+.botao-contato {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px 20px;
+  border-radius: 50px;
+  color: black;
+  text-decoration: underline; /* Adicione sublinhado ao texto */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 1s ease;
+  text-align: left;
+  display: flex;
+  align-items: center; /* Alinhar a imagem verticalmente ao texto */
+  width: fit-content;
+  margin-right: 10px; /* Espaçamento entre os botões superiores */
+  text-decoration: none;
+}
+.botao-contato:hover {
+  background-color: #6acc50;
+  transform: translateY(1s);
+  transition: 1s;
+  text-decoration: none;
+  border-bottom: 2px solid goldenrod;
+}
 
 .container {
   position: relative;
   text-align: center;
   padding: 20px;
+}
+footer{
+margin-top: 20px;
+
+}
+span{
+
+  color: orangered;
+}
+aside h1{
+margin-left: 1000px;
+margin-top: 90px;
+font-family: 'Roboto Slab', serif;
+
+}
+aside p{
+  font-family: 'Roboto Slab', serif;
+margin-top: 35px;
+margin-left: 1300px;
+margin-bottom: 120px;
 }
