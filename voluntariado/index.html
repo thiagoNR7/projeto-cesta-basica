@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Participação</title>
+</head>
+<body>
+    <h2>Participando da nossa causa você ajuda diversas famílias</h2>
+    <form action="processar_formulario.php" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td><label for="nome_razao_social">Nome/Razão Social:</label></td>
+                <td><input type="text" id="nome_razao_social" name="nome_razao_social" required></td>
+            </tr>
+            <tr>
+                <td><label for="cnpj">CNPJ:</label></td>
+                <td><input type="text" id="cnpj" name="cnpj" required></td>
+            </tr>
+            <tr>
+                <td><label for="local">Local (Endereço e CEP):</label></td>
+                <td><input type="text" id="local" name="local" required></td>
+            </tr>
+            <tr>
+                <td><label for="cestas_basicas">Quantidade de Cestas Básicas (inteiro):</label></td>
+                <td><input type="number" id="cestas_basicas" name="cestas_basicas" required step="1" pattern="[0-9]+"></td>
+            </tr>
+            <tr>
+                <td><label for="itens_cesta">Itens na Cesta Básica:</label></td>
+                <td><textarea id="itens_cesta" name="itens_cesta" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="imagem">Imagem:</label></td>
+                <td><input type="file" id="imagem" name="imagem" accept="image/*" required></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Realizar Cadastro">
+    </form>
+</body>
+</html>
