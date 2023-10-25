@@ -3,7 +3,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&display=swap');
   
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&display=swap');
 
 
 /* Estilos para o grid */
@@ -185,12 +185,29 @@ span{
 aside h1{
 margin-left: 1000px;
 margin-top: 90px;
-font-family: 'Roboto Slab', serif;
+font-family: 'Playpen Sans', cursive;
+color: black;
+box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15);
+border-radius: 7px;
+padding: 7px;
+cursor: pointer;
+
+}
+aside h1:hover{
+  
+  transform: translateY(1s);
+  transition: 1ms;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+
+
 
 }
 aside p{
-  font-family: 'Roboto Slab', serif;
+  
 margin-top: 35px;
+font-family: 'Playpen Sans', cursive;
 margin-left: 1300px;
 margin-bottom: 120px;
+color: black;
 }
